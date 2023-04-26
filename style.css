@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    
+}
+
+.header{
+    width: 100vw;
+    height: 10vh;
+    
+    background-color: #ffeb3b;
+    color: rgb(12, 12, 12);
+    overflow-y: hidden;
+}
+.header h3{
+    line-height: 10vh;
+    margin: 0px 20px;
+}
+.header h3 i{
+    margin: 0 10px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    
+}
+
+.form {
+
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    /* border: 1px solid gray; */
+    background-color: #ffeb3b53;
+    border-radius: 8px;
+    overflow:hidden;
+} 
+label {
+    display: block;
+    margin-bottom: 5px;
+    
+}
+label:first-child{
+    font-weight: bold;
+}
+input[type="text"],
+input[type="date"],select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="radio"]+label,input[type="checkbox"]+label {
+    display: inline-block;
+    margin-right: 10px;
+}
+input[type="submit"] {
+    background-color: #ffeb3b;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    transition: all 0.2s;
+    background-color: #f5e021;
+}
+#todo-list{
+    width: 75%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    padding: 10px;
+    width: 360px;
+    height: 220px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #ffeb3b;
+    color: black;
+    overflow: auto;
+}
+.card:hover{
+    transition: all 0.5s ease-in-out;
+    background-color: #f1da0b;
+    /* color:black; */
+}
+.btn{
+   position: relative;
+   background: none;
+   border: none;
+   float: right;
+   margin: 0px 5px;
+   cursor: pointer;
+   transition: all 0.2s;
+}
+.delete-button > i{
+    color: red;
+}
+.edit-button > i{
+    color: rgb(18, 220, 8);
+}
+.delete-button > i:hover{
+    color: rgb(243, 54, 54);
+    
+}
+.edit-button > i:hover{
+   color: rgb(58, 240, 48);
+}
+.card-content{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+tr{
+    /* border-bottom: 1px solid black; */
+    
+}
+td{
+    
+    padding: 1px;
+}
+ 
+@media only screen and (max-width: 600px) {
+    .header h3{
+        text-align: center;
+       
+
+    }
+}
+

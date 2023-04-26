@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="header">
+
+        <h3><i class="fa-solid fa-list-check"></i>To-Do Lists</h3>
+
+    </div>
+    <div class="container">
+        <div class="form">
+            <form id="form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" id="dob" required>
+                </div>
+                <div id="gen">
+                    <label for="gender">Gender:</label>
+                    <input type="radio" name="gender" id="male" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="Female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other" value="Other" required>
+                    <label for="other">Other</label>
+                </div>
+                <div>
+                    <label>Favorite Food:</label>
+                    <input type="checkbox" name="burger" id="burger" class="checkbox" value="Burger">
+                    <label for="burger">Burger</label>
+                    <input type="checkbox" name="pizza" id="pizza" class="checkbox" value="Pizza">
+                    <label for="pizza">Pizza</label>
+                </div>
+                <div>
+                    <label>Favorite Drink:</label>
+                    <select name="" id="option" multiple>
+                        <option value="Soda" id="drink1">Soda</option>
+                        <option value="Apple Juice" id="drink2">Apple Juice</option>
+                        <option value="Glass of Milk" id="drink3">Glass of Milk</option>
+                        <option value="Hot Coffee" id="drink4">Hot Coffee</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="description">Anything Else:</label>
+                    <textarea id="description" name="description"></textarea required>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div id="todo-list">
+            
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    
+</body>
+
+</html>
